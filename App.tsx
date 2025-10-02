@@ -5,16 +5,37 @@
  * @format
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
 import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import {
+  CameraView,
+  BarcodeScanner,
+  BarcodeResult,
+} from '@pushpendersingh/react-native-scanner';
+import { useEffect } from 'react';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
+  useEffect(() => {
+    BarcodeScanner.requestCameraPermission().then((permission: boolean) => {
+      if (!permission) {
+        return;
+      }
+      BarcodeScanner.startScanning((result: BarcodeResult) => {
+        console.log('Barcode: ', result);
+        BarcodeScanner.stopScanning();
+      });
+    });
+
+    return () => {
+      BarcodeScanner.stopScanning();
+    };
+  });
+
   return (
     <View style={styles.container}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <NewAppScreen templateFileName="App.tsx" />
+      <CameraView style={styles.container} />
     </View>
   );
 }

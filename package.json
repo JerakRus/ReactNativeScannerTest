@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@pushpendersingh/react-native-scanner": "^1.7.0",
+    "@pushpendersingh/react-native-scanner": "1.8.0",
     "@react-native/new-app-screen": "0.80.1",
     "react": "19.1.0",
     "react-native": "0.80.1"

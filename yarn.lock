@@ -1383,10 +1383,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pushpendersingh/react-native-scanner@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@pushpendersingh/react-native-scanner/-/react-native-scanner-1.7.0.tgz#a30db6405d11a504bb6eff606c925f686d2be51b"
-  integrity sha512-5hzhDTbyWNPAw1otCgWIBbb/5v6g9gfJ9bUIv5XiS5fLMjHWRhUPIwUPfX6aZVBiqOApqZWg0PaFiZBvTYeCbw==
+"@pushpendersingh/react-native-scanner@1.8.0":
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@pushpendersingh/react-native-scanner/-/react-native-scanner-1.8.0.tgz#337c74d24b22c0c2b783f80edf6697107f0601a0"
+  integrity sha512-zcslLYvNwTJmr83ShP/Lsd9FAwdrwShpGAEu53CXR+cnYn5GRVYwckL6VsFlF89MhAUN2Vnb2xn/U4jLSR3/rg==
 
 "@react-native-community/cli-clean@19.0.0":
   version "19.0.0"
